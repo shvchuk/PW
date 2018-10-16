@@ -25,10 +25,11 @@ h3 {
 
   &.lg-heading {
     font-size: 6rem;
+    //margin-bottom: 2rem;
   }
 
   &.sm-heading {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     padding: 0.2rem 1rem;
     background: rgba(lighten($primary-color, 2), 0.5);
   }
@@ -37,6 +38,20 @@ h3 {
 a {
   color: #fff;
   text-decoration: none;
+}
+
+// tech-stack styles
+.tech-stack {
+  margin-bottom: 2rem;
+  padding: 0.2rem 1rem;
+  background: rgba(lighten($primary-color, 2), 0.5);
+}
+
+// tech stack section typing cursor
+.printer > .txt {
+  font-size: 2rem;
+  color: $secondary-color;
+  border-right: 0.2rem solid $secondary-color;
 }
 
 header {
@@ -50,18 +65,25 @@ header {
 }
 
 main {
+  animation: 1s fadein 0.5s forwards;
+  opacity: 0;
   padding: 4rem;
   // height: 100%;
   min-height: calc(100vh - 60px);
 
   .icons {
-    margin-top: 1rem;
+    margin-top: 2rem;
 
     a {
-      padding: 0.4rem;
+      //padding: 0.4rem;
+      padding: 1.5rem;
+      opacity: 0.5;
+      //transition: all 0.2s ease-in-out;
 
       &:hover {
         color: $secondary-color;
+        opacity: 1;
+        //transform: scale(2);
         @include easeOut();
       }
     }
@@ -75,7 +97,14 @@ main {
   }
 }
 
+@keyframes fadein {
+  100% {
+    opacity: 1;
+  }
+}
+
 .about-info {
+  margin: 3rem;
   display: grid;
   grid-gap: 30px;
   grid-template-areas:
@@ -145,7 +174,7 @@ main {
 
 .pacman {
   position: absolute;
-  z-index: 99;
+  z-index: 2;
   top: 50%;
   left: -20%;
   animation: moveForward 10s linear infinite;
