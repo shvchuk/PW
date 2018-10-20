@@ -433,9 +433,27 @@ main {
       opacity: 1; }
     main#home .icons i {
       font-size: 1rem; }
-  main#about h1 {
-    margin-top: 5vh;
-    font-size: 2rem; }
+  main#about {
+    padding: 1rem; }
+    main#about h1 {
+      margin-top: 5vh;
+      margin-bottom: 5vh;
+      font-size: 2rem; }
+    main#about h2 {
+      font-size: 1rem;
+      margin-bottom: 5vh; }
+    main#about h3 {
+      font-size: 1rem; }
+    main#about h4 {
+      font-size: 0.8rem; }
+    main#about p {
+      font-size: 0.8rem; }
+    main#about .about-info {
+      margin: 1rem;
+      grid-gap: 15px; }
+      main#about .about-info .bio-image {
+        width: 150px;
+        height: 150px; }
   main#work h1 {
     margin-top: 5vh;
     font-size: 2rem; }
