@@ -47,6 +47,18 @@ $background-opacity: 0.4;
   }
 }
 
+@mixin mediaMsm {
+  @media screen and (min-width: 321px) and (max-width: 375px) {
+    @content;
+  }
+}
+
+@mixin mediaLsm {
+  @media screen and (min-width: 376px) and (max-width: 425px) {
+    @content;
+  }
+}
+
 @mixin mediaMd {
   @media screen and (max-width: 768px) {
     @content;
