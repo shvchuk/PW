@@ -407,36 +407,45 @@ main {
     grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 320px) {
-  main#home h1 {
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    font-size: 2rem; }
-  main#home h2 {
-    font-size: 1rem;
-    margin-bottom: 5vh; }
-  main#home .printer > .txt {
-    font-size: 1rem; }
-  main#home .tech-stack {
-    margin-bottom: 0; }
-  main#home .icons {
-    margin-top: 2vh;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row-reverse; }
-    main#home .icons .fa-twitter {
-      display: none; }
-    main#home .icons .fa-facebook {
-      display: none; }
-    main#home .icons a {
-      padding: 1rem;
-      opacity: 1; }
-    main#home .icons i {
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu-branding .portrait {
+      background: url("../img/pm2.jpg");
+      width: 100px;
+      height: 100px; }
+  main#home {
+    padding: 3rem; }
+    main#home h1 {
+      margin-top: 10vh;
+      margin-bottom: 5vh;
+      font-size: 2rem; }
+    main#home h2 {
+      font-size: 1rem;
+      margin-bottom: 5vh; }
+    main#home .printer > .txt {
       font-size: 1rem; }
+    main#home .tech-stack {
+      margin-bottom: 0; }
+    main#home .icons {
+      margin-top: 2vh;
+      padding: 0;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row-reverse; }
+      main#home .icons .fa-twitter {
+        display: none; }
+      main#home .icons .fa-facebook {
+        display: none; }
+      main#home .icons a {
+        padding: 1rem;
+        opacity: 1; }
+      main#home .icons i {
+        font-size: 1.5rem; }
   main#about {
     padding: 1rem; }
     main#about h1 {
-      margin-top: 5vh;
+      margin-top: 10vh;
       margin-bottom: 5vh;
       font-size: 2rem; }
     main#about h2 {
@@ -454,9 +463,32 @@ main {
       main#about .about-info .bio-image {
         width: 150px;
         height: 150px; }
-  main#work h1 {
-    margin-top: 5vh;
-    font-size: 2rem; }
-  main#contact h1 {
-    margin-top: 5vh;
-    font-size: 2rem; } }
+      main#about .about-info .job {
+        border-bottom: #faed26 2px solid; }
+  main#work {
+    padding: 1rem; }
+    main#work h1 {
+      margin-top: 10vh;
+      margin-bottom: 10vh;
+      font-size: 2rem; }
+    main#work .comming-soon {
+      text-align: center;
+      text-transform: uppercase;
+      margin-top: 3rem;
+      font-size: 1rem; }
+  main#contact {
+    padding: 1rem;
+    padding-bottom: 0; }
+    main#contact h1 {
+      margin-top: 10vh;
+      font-size: 2rem; }
+    main#contact h2 {
+      font-size: 1rem;
+      margin-bottom: 5vh; }
+    main#contact .boxes {
+      margin-top: 0.5rem; }
+      main#contact .boxes div {
+        font-size: 1rem;
+        border: 1px #fff solid;
+        padding: 1rem 2rem;
+        margin-bottom: 1.5rem; } }

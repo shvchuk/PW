@@ -60,9 +60,22 @@
 
 // smartphones
 @include mediaSm {
+  .menu-branding {
+    //padding-top: 5vh;
+    height: 25vh;
+    transform: translate3d(100%, 0, 0);
+
+    .portrait {
+      background: url("../img/pm2.jpg");
+      width: 100px;
+      height: 100px;
+    }
+  }
+
   main#home {
+    padding: 3rem;
     h1 {
-      margin-top: 5vh;
+      margin-top: 10vh;
       margin-bottom: 5vh;
       font-size: 2rem;
     }
@@ -101,7 +114,7 @@
       }
 
       i {
-        font-size: 1rem;
+        font-size: 1.5rem;
       }
     }
   }
@@ -109,7 +122,7 @@
   main#about {
     padding: 1rem;
     h1 {
-      margin-top: 5vh;
+      margin-top: 10vh;
       margin-bottom: 5vh;
       font-size: 2rem;
     }
@@ -134,16 +147,58 @@
         width: 150px;
         height: 150px;
       }
+
+      .job {
+        border-bottom: $secondary-color 2px solid;
+      }
     }
   }
 
-  main#work h1 {
-    margin-top: 5vh;
-    font-size: 2rem;
+  main#work {
+    padding: 1rem;
+
+    h1 {
+      margin-top: 10vh;
+      margin-bottom: 10vh;
+      font-size: 2rem;
+    }
+
+    .comming-soon {
+      text-align: center;
+      text-transform: uppercase;
+      margin-top: 3rem;
+      font-size: 1rem;
+    }
   }
 
-  main#contact h1 {
-    margin-top: 5vh;
-    font-size: 2rem;
+  main#contact {
+    padding: 1rem;
+    padding-bottom: 0;
+    //margin-bottom: 0;
+
+    h1 {
+      margin-top: 10vh;
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1rem;
+      margin-bottom: 5vh;
+    }
+
+    .boxes {
+      // display: flex;
+      // flex-wrap: wrap;
+      // justify-content: space-evenly;
+      // align-items: center;
+      margin-top: 0.5rem;
+
+      div {
+        font-size: 1rem;
+        border: 1px #fff solid;
+        padding: 1rem 2rem;
+        margin-bottom: 1.5rem;
+      }
+    }
   }
 }
